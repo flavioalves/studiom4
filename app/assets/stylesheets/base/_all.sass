@@ -4,8 +4,9 @@
 //
 // FRAMEWORKS AND PLUGINS
 // --------------------------------------------------
-//=require "bootstrap/custom"
-//=require "font-awesome"
+@import "bootstrap/bootstrap"
+@import "bootstrap/bootstrap-responsive"
+
 //
 // COMPASS
 // --------------------------------------------------
@@ -21,28 +22,15 @@
 @import "variables"
 @import "mixins"
 @import "print"
-@import "fonts"
 @import "lt_ie9"
 
 // ---------------------------------------------------------------------------------
 //  DEFAULT STYLES
 // ---------------------------------------------------------------------------------
-html
-  overflow-y: scroll
 
-// ACTIVATE THE VERTICAL RHYTHM
-// --------------------------------------------------
-+establish-baseline
+@import "shortcodes"
+@import "supersized"
+@import "supersized.shutter"
+@import "tpl/fonts"
 
-// GRIDS
-// --------------------------------------------------
 
-body
-  .profiler-results
-    display: none
-
-body[data-development-grid="show"]
-  +background-grid
-
-  .profiler-results
-    display: block
