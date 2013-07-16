@@ -58,7 +58,8 @@
 	
 	header .sticky-nav,
 	header .sticky-nav.stuck {
-		position: relative;	
+		position: absolute;	
+		width: 100%;	
 	}
 	
 	#home-slider .container .row {
@@ -224,7 +225,8 @@
 	
 	header .sticky-nav,
 	header .sticky-nav.stuck {
-		position: relative;	
+		position: absolute;	
+		width: 100%;
 	}
 	
 	header .sticky-nav,
