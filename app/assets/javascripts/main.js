@@ -481,9 +481,9 @@ CHAKRA.map = function(){
 	Init
 ================================================== */
 
-CHAKRA.slider();
-
 $(document).ready(function(){
+	CHAKRA.slider();
+	
 	// Call placeholder.js to enable Placeholder Property for IE9
 	/*
 	Modernizr.load([
