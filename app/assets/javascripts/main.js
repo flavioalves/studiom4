@@ -463,7 +463,7 @@ CHAKRA.map = function(){
 			map.mapTypes.set('map_style', styledMap);
   			map.setMapTypeId('map_style');
 			
-			var contentString = '<p><strong>Company Name</strong><br>Address here</p>';
+			var contentString = '<p><strong>Studio M4</strong><br>CLN 309 bloco C sala 206</p>';
        
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
