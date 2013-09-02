@@ -495,6 +495,27 @@ h3.spec {
 }
 
 
+    
+
+
+.container-presentation {
+	background: #F5F6F6 url('bkg.png');
+	height: 100%;
+	width: 100%;
+	padding-top: 14.7%;
+	padding-left: 0.7%;
+}
+
+.container-presentation  .logo-container {
+	background: #F5F6F6 url('logo-presentation-200.png') no-repeat center center;
+	height: 325px;
+	width: 280px;
+	margin: auto;
+	border: 1px solid #34255b;
+	box-shadow: inset 1px 1px 5px #b2b2b2;
+}
+
+
 /* ==================================================
    Header
 ================================================== */
