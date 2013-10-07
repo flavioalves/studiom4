@@ -6,6 +6,7 @@ pt-BR:
       admin_user: Administrador(es)
       content_block: Bloco(s) de Conteúdo
       contact: Contato(s)
+      project: Projeto(s)
     attributes:
       contact:
         name: Nome
@@ -31,7 +32,7 @@ pt-BR:
         updated_at: Atualizado em
         current_sign_in_at: Loggado em
         last_sign_in_at: Login anterior em
-        sign_in_count: Número de logins
+        sign_in_count: Número de logins      
       user:
         name: Nome
         email: Email
@@ -42,3 +43,10 @@ pt-BR:
         updated_at: Atualizado em
         current_sign_in_at: Último login em
         sign_in_count: No. de logins
+      project:
+        active: Ativado
+        title: Título
+        category: Categoria
+        description: Descrição
+
+

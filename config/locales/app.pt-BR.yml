@@ -8,6 +8,7 @@ pt-BR:
       administration: 'Administração'
       content: 'Conteúdo'
       reports: 'Relatórios'
+      project: 'Projetos'
       welcome: 'Bem Vindo(a) ao Painel Administrativo!'
       call_to_action: |
         Para editar ou visualizar elementos desta aplicação
