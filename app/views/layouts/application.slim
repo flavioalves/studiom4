@@ -12,7 +12,7 @@ html.no-js lang="#{I18n.locale}"
   /! <![endif]
 
   head
-    title #{(content_for?(:title) ? "#{yield :title} — " : "") + 'Studiom4' }
+    title #{(content_for?(:title) ? "#{yield :title} — " : "") + 'StudioM4' }
     == render 'layouts/metatags'
     == render 'layouts/favicons'
 
@@ -37,10 +37,9 @@ html.no-js lang="#{I18n.locale}"
 
   body class="#{yield :body_class}" data-development-grid="hide"
     == render 'layouts/browser_warning'
-    == render 'layouts/mercury_edit_button' if current_admin_user.present?
-    //== render 'layouts/header'
-    //.container-presentation
-      //.logo-container
+    == render 'layouts/mercury_edit_button' if current_admin_user.present?    
+    .container-presentation
+      .logo-container
 
     section.page
       - if notice.present?

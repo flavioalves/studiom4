@@ -8,4 +8,9 @@ class CreatePhotos < ActiveRecord::Migration
       t.timestamps
     end
   end
+
+  def self.up
+    change_column :image, :default => "assets/defaut-project.jpg.jpg"
+  end
+
 end

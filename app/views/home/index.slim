@@ -25,13 +25,12 @@ header
 
     .row
       .span12
-        = render partial: 'modules/portifolio'
+        = render partial: 'modules/portifolio', locals: { projects: @projects } 
 
 <!-- About Section -->
 #about.page-alternate
   .container
     = render partial: 'modules/team'
-
 
 <!-- Contact Section -->
 #contact.page

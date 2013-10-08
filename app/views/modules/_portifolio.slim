@@ -14,11 +14,7 @@ nav#options.work-nav
 
 .row
   section#projects
-    = render partial: 'modules/project_list_old'
-
-  //<ul id="thumbs">
-  //  <% @projects.each do |project| %>
-  //    <%= render partial: 'modules/project', locals: { p: project } %>
-  //  <% end %>
-  //</ul>
-    
+    ul#thumbs
+     - projects.each do |project| 
+       = render partial: 'modules/project_item', locals: { p: project } 
+     
