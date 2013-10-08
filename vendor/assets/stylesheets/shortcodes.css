@@ -33,7 +33,7 @@
 .button:hover,
 .button:active,
 .button:focus {
-	background-color: #FF7B3A;
+	background-color: #34255b;
 	color:#FFFFFF;
 }
 
@@ -107,12 +107,12 @@
 
 .accordion-heading:hover .accordion-toggle,
 .accordion-heading:hover .accordion-toggle.inactive {
-	background:#FF8C53;
+	background:#34255b;
 	color:#FFFFFF;
 }
 
 .accordion-heading .accordion-toggle.active {
-	background:#FF8C53;
+	background:#34255b;
 	color:#FFFFFF;
 }
 
@@ -279,7 +279,7 @@
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  	background-color: #FF8C53;
+  	background-color: #34255b;
 	color: #FFFFFF;
   	text-decoration: none;
   	display: block;
@@ -327,7 +327,7 @@
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
 	border: none;
-  	background-color: #FF8C53;
+  	background-color: #34255b;
 	color: #FFFFFF;
   	cursor: default;
 }
@@ -368,7 +368,7 @@
 
 blockquote {
   	padding: 15px 20px;
-  	border-left: 2px solid #FF8C53;
+  	border-left: 2px solid #34255b;
 }
 
 blockquote p {
@@ -433,7 +433,7 @@ blockquote small:before {
   	-webkit-border-radius: 0;
        -moz-border-radius: 0;
           	border-radius: 0;
-  	background-color: #FF8C53;
+  	background-color: #34255b;
   	color: #FFFFFF;
   	text-align: center;
   	text-decoration: none;
@@ -452,7 +452,7 @@ blockquote small:before {
   	left: 50%;
   	margin-left: -15px;
   	border-width: 10px 10px 0;
-  	border-top-color: #FF8C53;
+  	border-top-color: #34255b;
 }
 
 .tooltip.right .tooltip-arrow {
@@ -460,7 +460,7 @@ blockquote small:before {
   	left: 0;
   	margin-top: -15px;
   	border-width: 10px 10px 10px 0;
-  	border-right-color: #FF8C53;
+  	border-right-color: #34255b;
 }
 
 .tooltip.left .tooltip-arrow {
@@ -468,7 +468,7 @@ blockquote small:before {
   	right: 0;
   	margin-top: -15px;
   	border-width: 10px 0 10px 10px;
-  	border-left-color: #FF8C53;
+  	border-left-color: #34255b;
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -476,7 +476,7 @@ blockquote small:before {
   	left: 50%;
   	margin-left: -15px;
   	border-width: 0 10px 10px;
-  	border-bottom-color: #FF8C53;
+  	border-bottom-color: #34255b;
 }
 
 /* ==================================================
@@ -484,7 +484,7 @@ blockquote small:before {
 ================================================== */
 
 .info-block {
-    border-left: 2px solid #FF8C53;
+    border-left: 2px solid #34255b;
     overflow: hidden;
     padding: 20px;
     position: relative;
@@ -568,7 +568,7 @@ blockquote small:before {
 }
 
 .progress .bar {
-	background-color: #FF8C53;
+	background-color: #34255b;
 	background-image: none;
 	
 	-webkit-border-radius: 0;
@@ -636,7 +636,7 @@ blockquote small:before {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: #FF8C53;
+	background: #34255b;
 	
 	opacity: 0.45;
 	filter: alpha(opacity=45);
@@ -715,7 +715,7 @@ blockquote small:before {
 
 .icons-example ul li:hover a,
 .icons-example ul li.active a {
-	background-color: #FF8C53;	
+	background-color: #34255b;	
 	
 	-webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
