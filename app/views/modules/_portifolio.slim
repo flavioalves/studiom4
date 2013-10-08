@@ -1,0 +1,24 @@
+
+nav#options.work-nav
+  ul#filters.option-set data-option-key="filter"
+    li
+      a.selected href="#filter" data-option-value="*" Todos os projetos
+    li
+      a href="#filter" data-option-value=".residencial" Residencial
+    li
+      a href="#filter" data-option-value=".reformas" Reformas
+    li
+      a href="#filter" data-option-value=".interiores" Interiores
+    li
+      a href="#filter" data-option-value=".comercial" Comercial
+
+.row
+  section#projects
+    = render partial: 'modules/project_list_old'
+
+  //<ul id="thumbs">
+  //  <% @projects.each do |project| %>
+  //    <%= render partial: 'modules/project', locals: { p: project } %>
+  //  <% end %>
+  //</ul>
+    
