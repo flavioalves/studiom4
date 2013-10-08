@@ -24,6 +24,7 @@
 #= require jquery.tweet
 #= require jquery.validate
 #= require plugins
+#= require utils
 #= require main
 
 

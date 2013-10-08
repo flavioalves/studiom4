@@ -39,9 +39,10 @@ html.no-js lang="#{I18n.locale}"
     == render 'layouts/browser_warning'
     == render 'layouts/mercury_edit_button' if current_admin_user.present?    
     .container-presentation
-      .logo-container
+      a#go-to-home-link 
+        .logo-container
 
-    section.page
+    section style="background: #F5F6F6; padding: 0px;"
       - if notice.present?
         .notice == notice
       - if alert.present?
