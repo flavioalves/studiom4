@@ -1,8 +1,8 @@
 li.item-thumbs.span3 class="#{p.category.downcase.to_s}"
     
   - p.photos.each do |photo|
-    a.hover-wrap.fancybox title="The City" href="#{photo.image}" rel="#{p.id}"
+    a.hover-wrap.fancybox title="#{photo.caption}" href="#{photo.image}" rel="#{p.id}"
       span.overlay-img
       span.overlay-img-thumb.font-icon-search
 
-  img src="#{p.photos.first.image.thumb}" alt="#{p.photos.first.caption}"
+  img src="#{p.photos.first.image.thumb}" 

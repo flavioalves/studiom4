@@ -165,8 +165,15 @@ CHAKRA.fancyBox = function(){
 			padding : 0,
 			nextEffect : 'none',
 			prevEffect : 'none',
+			overlayColor: '#666',
+			overlayOpacity: 0.3,
 			helpers : {
-				title : { type: 'inside' },
+				title : { type: 'inside' },		
+        overlay : {
+          css : {
+            'background' : 'rgba(00, 00, 00, 0.4)'
+          }
+        }    
 			}
 		});
 			
@@ -187,7 +194,7 @@ CHAKRA.fancyBox = function(){
 			autoSize	: false,
 			closeClick	: false,
 			openEffect	: 'none',
-			closeEffect	: 'none'
+			closeEffect	: 'none',
 		});
 	}
 }
