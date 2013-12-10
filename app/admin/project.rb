@@ -32,17 +32,17 @@ ActiveAdmin.register Project do
   end
 
   form do |f|
-    f.inputs "Detalhes do projeto" do
+    f.inputs "Detalhes do projeto" , :multipart => true do
       f.input :title
       f.input :active
       f.input :category, as: :select, collection: ["Residencial", "Reformas", "Interiores", "Comercial"]            
       f.input :description       
     end    
 
-    f.inputs "Fotos do projeto" do
+    f.inputs "Fotos do projeto", :multipart => true do
       f.has_many :photos do |p|
-        p.input :image, :as => :file, :label => "Imagem"
-        p.input :caption         
+        p.input :image, :as => :file, :hint => p.template.image_tag(p.object.image.url(:thumb)), :label => "Imagem"
+        #p.input :caption, :label => "Título"         
       end
     end
 
