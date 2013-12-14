@@ -2,7 +2,10 @@ li.item-thumbs.span3 class="#{p.category.downcase.to_s}"
     
   - p.photos.each do |photo|
     a.hover-wrap.fancybox title="#{photo.caption}" href="#{photo.image}" rel="#{p.id}"
-      span.overlay-img
-      span.overlay-img-thumb.font-icon-search
+      //span.overlay-img
+      span.overlay-img-thumb
+        i.font-icon-search
+        p
+          = p.description.html_safe
   - if p.photos.exists?     
     img src="#{p.photos.first.image.thumb}" 

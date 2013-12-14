@@ -12,7 +12,9 @@ ActiveAdmin.register Project do
     column :title
     column :active
     column :category
-    column :description
+    column :description do |project|
+      project.description.html_safe 
+    end
     default_actions
   end
 
@@ -21,7 +23,9 @@ ActiveAdmin.register Project do
       row :title
       row :active
       row :category
-      row :description
+      row :description do
+        project.description.html_safe
+      end
       row :photos do
         project.photos.collect { |s| link_to s.image }.join(', ').html_safe
       end
@@ -36,18 +40,19 @@ ActiveAdmin.register Project do
       f.input :title
       f.input :active
       f.input :category, as: :select, collection: ["Residencial", "Reformas", "Interiores", "Comercial"]            
-      f.input :description       
+      f.input :description, as: :ckeditor      
     end    
 
     f.inputs "Fotos do projeto", :multipart => true do
       f.has_many :photos do |p|
         p.input :image, :as => :file, :hint => p.template.image_tag(p.object.image.url(:thumb)), :label => "Imagem"
-        #p.input :caption, :label => "Título"         
+        #link_to 'remove', remove_image(p), :confirm => "Are you sure?", :method => :delete
+        #p.input :caption, :label => "Título" 
+
       end
     end
 
     f.actions
   end    
-
 
 end
