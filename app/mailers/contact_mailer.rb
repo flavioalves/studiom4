@@ -1,11 +1,10 @@
 class ContactMailer < ActionMailer::Base
-  default to: 'admin@example.com'
+  default from: "flaviof.alves@gmail.com"
 
-  def contact_mail(hash)
-    @name = hash[:name]
-    @email = hash[:email]
-    @message = hash[:message]
-
-    mail(from: @email, subject: "[#{ENV['APP_HOSTNAME']}] #{@name}")
+  def contact_mail(contact)
+    puts "==" * 30
+    @contact = contact
+    mail(to: @contact.email, subject: '[StudioM4] Contato pelo site')
   end
+
 end

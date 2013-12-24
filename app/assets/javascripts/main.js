@@ -212,7 +212,7 @@ CHAKRA.contactForm = function(){
 		
 		$.ajax({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "contato/enviar",
 			data: fields,
 			dataType: 'json',
 			success: function(response) {
@@ -221,8 +221,8 @@ CHAKRA.contactForm = function(){
 					$('#contact-form input').val('');
 					$('#contact-form textarea').val('');
 				}
-				
-				$('#response').empty().html(response.html);
+				alert("Mensagem enviada com sucesso!");
+				//$('#response').empty().html(response.html);
 			}
 		});
 		return false;
