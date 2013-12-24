@@ -166,12 +166,12 @@ CHAKRA.fancyBox = function(){
 			nextEffect : 'none',
 			prevEffect : 'none',
 			overlayColor: '#666',
-			overlayOpacity: 0.3,
+			overlayOpacity: 0.8,
 			helpers : {
 				title : { type: 'inside' },		
         overlay : {
           css : {
-            'background' : 'rgba(00, 00, 00, 0.4)'
+            'background' : 'rgba(00, 00, 00, 0.8)'
           }
         }    
 			}
@@ -297,7 +297,7 @@ CHAKRA.goSection = function(){
 CHAKRA.goUp = function(){
 	$('#goUp').on('click', function(){
 		$target = $($(this).attr('href')).offset().top-30;
-		
+		$('#menu-nav').find('li.current').removeClass('current');
 		$('body, html').animate({scrollTop : $target}, 750, 'easeOutExpo');
 		return false;
 	});
