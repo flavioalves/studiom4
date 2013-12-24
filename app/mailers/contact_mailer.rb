@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "flaviof.alves@gmail.com"
+  default from: "contato@studiom4.com.br"
 
   def contact_mail(contact)
     puts "==" * 30
