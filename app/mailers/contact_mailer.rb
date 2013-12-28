@@ -4,7 +4,7 @@ class ContactMailer < ActionMailer::Base
   def contact_mail(contact)
     puts "==" * 30
     @contact = contact
-    mail(to: @contact.email, subject: '[StudioM4] Contato pelo site')
+    mail(to: "contato@studiom4.com.br", subject: '[StudioM4] Contato pelo site')
   end
 
 end
