@@ -1,0 +1,31 @@
+.bx-wrapper 
+	.bx-prev 
+		left: 10px
+		background: url(controls.png) no-repeat 0 -32px
+	
+	.bx-next 
+		right: 10px
+		background: url(controls.png) no-repeat -43px -32px
+
+
+
+	.bx-prev:hover 
+		background-position: 0 0
+
+
+	.bx-next:hover 
+		background-position: -43px 0
+
+	.bx-controls-direction a 
+		position: absolute
+		top: 50%
+		margin-top: -16px
+		outline: 0
+		width: 32px
+		height: 32px
+		text-indent: -9999px
+		z-index: 9999
+
+
+	.bx-controls-direction a.disabled 
+		display: none
