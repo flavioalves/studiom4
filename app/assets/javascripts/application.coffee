@@ -26,6 +26,18 @@
 #= require plugins
 #= require utils
 #= require main
+#= require jquery.bxslider
+
+
+
+
+
+
+
+
+
+
+
 
 
 
