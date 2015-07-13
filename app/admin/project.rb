@@ -40,10 +40,15 @@ ActiveAdmin.register Project do
       f.input :title
       f.input :active
       f.input :category, as: :select, collection: ["Residencial", "Reformas", "Interiores", "Comercial"]            
-      f.input :description, as: :ckeditor      
+      f.input :description, as: :ckeditor   
+
     end    
 
+    
+
     f.inputs "Fotos do projeto", :multipart => true do
+      
+      f.input :cover_photo, :as => :file
       f.has_many :photos do |p|
         p.input :image, :as => :file, :hint => p.template.image_tag(p.object.image.url(:thumb)), :label => "Imagem"
         #link_to 'remove', remove_image(p), :confirm => "Are you sure?", :method => :delete
