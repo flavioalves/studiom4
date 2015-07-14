@@ -1,8 +1,9 @@
 class Project < ActiveRecord::Base
-  attr_accessible :description, :title, :category, :active, :photos_attributes, :cover_photo
+  attr_accessible :description, :title, :category, :active, :photos_attributes, :cover_image, :cover_caption
 
   has_many :photos, dependent: :destroy
-  has_one :cover_photo, dependent: :destroy
-
-  accepts_nested_attributes_for :photos, :cover_photo
+  
+  mount_uploader :cover_image, PhotoUploader
+  accepts_nested_attributes_for :photos
 end
+

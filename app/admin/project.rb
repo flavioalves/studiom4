@@ -26,6 +26,9 @@ ActiveAdmin.register Project do
       row :description do
         project.description.html_safe
       end
+      row :cover_photo do
+        link_to project.cover_image
+      end
       row :photos do
         project.photos.collect { |s| link_to s.image }.join(', ').html_safe
       end
@@ -48,7 +51,8 @@ ActiveAdmin.register Project do
 
     f.inputs "Fotos do projeto", :multipart => true do
       
-      f.input :cover_photo, :as => :file
+      f.input :cover_image, :as => :file, :hint => f.object.cover_image.nil? ? 
+      f.template.content_tag(:span, "no photo yet") : f.template.image_tag(f.object.cover_image.url(:thumb))
       f.has_many :photos do |p|
         p.input :image, :as => :file, :hint => p.template.image_tag(p.object.image.url(:thumb)), :label => "Imagem"
         #link_to 'remove', remove_image(p), :confirm => "Are you sure?", :method => :delete

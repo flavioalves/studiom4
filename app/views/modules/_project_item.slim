@@ -8,4 +8,4 @@ li.item-thumbs.span3 class="#{p.category.downcase.to_s}"
         p
           = p.description.html_safe
   - if p.photos.exists?     
-    img src="#{p.photos.first.image.thumb}" 
+    img src="#{p.cover_image.thumb}" 

@@ -7,6 +7,7 @@ pt-BR:
       content_block: Bloco(s) de Conteúdo
       contact: Contato(s)
       project: Projeto(s)
+      gallery_photo: Fotos da Galeria
     attributes:
       contact:
         name: Nome
@@ -49,6 +50,8 @@ pt-BR:
         category: Categoria
         description: Descrição
         photos: Foto(s)
-        cover_photo: Foto de Capa
+        cover_image: Foto de Capa
+      gallery_photo:
+        image: Imagem
 
 
