@@ -7,14 +7,12 @@ ActiveAdmin.register GalleryPhoto do
   index do
     column :id
     column :image
-    column :caption
     default_actions
   end
 
   show title: :image do |photo|
     attributes_table do
       row :image
-      row :caption
          
     end
     

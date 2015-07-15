@@ -26,7 +26,7 @@ ActiveAdmin.register Project do
       row :description do
         project.description.html_safe
       end
-      row :cover_photo do
+      row :cover_image do
         link_to project.cover_image
       end
       row :photos do
@@ -64,4 +64,4 @@ ActiveAdmin.register Project do
     f.actions
   end    
 
-end
+end 

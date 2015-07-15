@@ -1444,9 +1444,13 @@ video
    Social Area
 ================================================== */
 
+
 #social-area {
-    text-align: center;
+	text-align: center;
+	position: relative;
+	right: 60px;
 }
+
 
 #social-area #social ul {
 	margin: 0;

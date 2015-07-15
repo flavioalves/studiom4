@@ -10,6 +10,8 @@ class HomeController < ApplicationController
         @projects.push p  
       end
     end
+
+    2
   end
 
 end
