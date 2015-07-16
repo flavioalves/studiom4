@@ -8,6 +8,11 @@ var CHAKRA = window.CHAKRA || {};
 /* Clone Menu for use later */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
+
+$('#menu-nav .open-link').on('click', function(){
+	var win = window.open($(this).attr('href'), '_blank');
+  	
+});
 CHAKRA.mobileNav = function(){
 	var windowWidth = $(window).width();
 	
@@ -32,7 +37,9 @@ CHAKRA.listenerMenu = function(){
 		
 		$('#navigation-mobile').stop().slideToggle(350, 'easeOutExpo');
 		
-		e.preventDefault();
+		e.preventDefault();	
+		
+		
 	});
 	
 	$('#menu-nav-mobile a').on('click', function(){
@@ -531,6 +538,8 @@ $(document).ready(function(){
 	CHAKRA.toggle();
 	CHAKRA.toolTip();
 	CHAKRA.map();
+
+
 });
 
 $(window).resize(function(){
