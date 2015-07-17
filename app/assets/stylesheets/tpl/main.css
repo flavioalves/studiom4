@@ -979,9 +979,9 @@ nav#menu #menu-nav li a:hover {
 .services-box .icon {
 	background: #34255b;
     display: inline-block;
-    height: 160px;
+    height: 100px;
     position: relative;
-    width: 160px;
+    width: 100px;
 	margin-bottom: 40px;
 	
 	-webkit-border-radius: 999px;
