@@ -167,6 +167,23 @@ CHAKRA.filter = function (){
 CHAKRA.fancyBox = function(){
 	if($('.fancybox').length > 0 || $('.fancybox-media').length > 0 || $('.fancybox-various').length > 0){
 		$(".fancybox").fancybox({				
+			
+			padding : 0,
+			nextEffect : 'none',
+			prevEffect : 'none',
+			overlayColor: '#666',
+			overlayOpacity: 0.8,
+			helpers : {
+				title : { type: 'inside' },		
+        overlay : {
+          css : {
+            'background' : 'rgba(00, 00, 00, 0.8)'
+          }
+        }    
+			}
+		});
+
+		$(".fancybox-profile").fancybox({				
 			maxWidth: 272,
 			padding : 0,
 			nextEffect : 'none',
