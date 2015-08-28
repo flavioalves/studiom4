@@ -512,7 +512,16 @@ CHAKRA.map = function(){
 $(document).ready(function(){
 	CHAKRA.slider();
 	$('.image-slider').css("maxHeight", $(window).height() - 60)
-	$('.bxslider').bxSlider({auto: true, controls:false , adaptativeHeight: true, speed: 2000, pause: 6000, pager: false});
+	$('.bx-wrapper').hide();
+	$('.bxslider').bxSlider(
+		{auto: true, 
+			controls:false , 
+			adaptativeHeight: true, 
+			speed: 2000, pause: 6000, 
+			pager: false, 
+			onSliderLoad: function() {
+				$('.bx-wrapper').show();
+			}});
 	
 
 	// Call placeholder.js to enable Placeholder Property for IE9
