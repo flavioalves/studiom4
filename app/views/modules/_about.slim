@@ -6,10 +6,10 @@
 /            .span12
 /                slider-text
 /                    #slidecaption  
-
-ul.bxslider
-  - @gallery_photos.each do |p|
-  	img.image-slider src="#{p.image}"
-  
+.slider-wrapper
+	ul.bxslider
+	  - @gallery_photos.each do |p|
+	  	img.image-slider src="#{p.image}"
+	  
   
   
