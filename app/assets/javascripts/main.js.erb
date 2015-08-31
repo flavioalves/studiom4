@@ -512,7 +512,7 @@ CHAKRA.map = function(){
 $(document).ready(function(){
 	CHAKRA.slider();
 	$('.image-slider').css("maxHeight", $(window).height() - 60)
-	$('.bx-wrapper').hide();
+	$('.image-slider').hide();
 	$('.bxslider').bxSlider(
 		{auto: true, 
 			controls:false , 
@@ -520,7 +520,7 @@ $(document).ready(function(){
 			speed: 2000, pause: 6000, 
 			pager: false, 
 			onSliderLoad: function() {
-				$('.bx-wrapper').show();
+				$('.image-slider').show();
 			}});
 	
 
