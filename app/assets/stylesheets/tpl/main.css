@@ -1318,7 +1318,7 @@ video
 
 .contact-details ul li {
 	margin: 0 0 20px;
-	line-height: 28px;
+	line-height: 27px;
 	padding: 0;	
 }
 
@@ -1327,7 +1327,7 @@ video
 }
 
 #contact-form p {
-	margin-bottom: 1px;	
+	margin-bottom: 2px;	
 }
 
 #contact-form input,
@@ -1345,7 +1345,7 @@ video
     color: #55606A;
     font-size: 16px;
     height: auto;
-    padding: 15px;
+    padding: 12px;
 	margin: 0;
 	
     resize: none;

@@ -8,13 +8,15 @@
 
     form#contact-form.contact-form action="#"
       p.contact-name
-        input.contact_name type="text" placeholder="Qual seu nome?" value="" name="name" 
+        input.contact-input.contact_name type="text" placeholder="Qual seu nome?" value="" name="name" 
       
       p.contact-email
-        input.contact_email type="text" placeholder="Qual seu email?" value="" name="email" 
+        input.contact-input.contact_email type="text" placeholder="Qual seu email?" value="" name="email" 
+      p.contact-phone
+        input.contact-input.contact_phone type="text" placeholder="Qual seu telefone?" value="" name="email" 
       
       p.contact-message
-        textarea#contact_message placeholder="Deixe uma mensagem que a gente te responde em 24 horas." name="message" rows="12" cols="40"
+        textarea#contact_message placeholder="Deixe uma mensagem que a gente te responde em 24 horas." name="message" rows="9" cols="40"
       
       p.contact-submit
         a#contact-submit.submit href="#" Enviar Email
