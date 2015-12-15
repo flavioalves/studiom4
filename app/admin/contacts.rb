@@ -7,6 +7,7 @@ ActiveAdmin.register Contact do
 
   filter :name
   filter :email
+  filter :phone
   filter :message
   filter :created_at
 
@@ -14,6 +15,7 @@ ActiveAdmin.register Contact do
     column :id
     column :name
     column :email
+    column :phone
     column :created_at
     default_actions
   end
