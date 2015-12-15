@@ -51,6 +51,7 @@ group :assets do
 end
 
 group :test, :development do
+  gem 'byebug'
   gem 'rspec-rails'
 end
 

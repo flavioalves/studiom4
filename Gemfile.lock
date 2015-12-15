@@ -59,6 +59,7 @@ GEM
     builder (3.0.4)
     bullet (4.6.0)
       uniform_notifier
+    byebug (8.2.1)
     carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -395,6 +396,7 @@ DEPENDENCIES
   binding_of_caller
   breakpoint
   bullet
+  byebug
   carrierwave
   chosen-rails
   ckeditor
@@ -448,3 +450,6 @@ DEPENDENCIES
   toolkit
   uglifier
   unicorn
+
+BUNDLED WITH
+   1.10.6

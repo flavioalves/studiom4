@@ -232,7 +232,7 @@ CHAKRA.contactForm = function(){
 		$contact_form = $('#contact-form');
 		
 		var fields = $contact_form.serialize();
-		
+		console.log(fields);
 		$.ajax({
 			type: "POST",
 			url: "contato/enviar",
