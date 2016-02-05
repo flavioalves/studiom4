@@ -12,8 +12,11 @@
   .hero
     text-align: center
     img
-      width: 700px
       margin: 0 auto 40px
+      width: 100%
+      @media (min-width: 980px)
+        width: 700px
+
 
   p
     text-align: center
@@ -23,11 +26,26 @@
 
   .about
     .span4
-      width: 335px
+      float: left
+      width: 49%
+      @media (min-width: 768px) and (max-width: 979px)
+        //width: 335px
+        width: 45%
+      @media (min-width: 980px)
+        //width: 40%
+        width: 370px
+
 
     .offset3
-      margin-left: 315px
       margin-top: 17px
+      margin-left: 10px
+      @media (min-width: 768px) and (max-width: 979px)
+        margin-left: 4%
+      @media (min-width: 980px)
+        margin-left: 15%
+      @media (min-width: 1200px)
+        margin-left: 21%
+
     b
       color: #34255b
 
