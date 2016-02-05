@@ -515,15 +515,15 @@ $(document).ready(function(){
 		//CHAKRA.slider();
 		$('.image-slider').css("maxHeight", $(window).height() - 60)
 
-		// $('.bxslider').bxSlider(
-		// 		{auto: true,
-		// 			controls:false ,
-		// 			adaptativeHeight: true,
-		// 			speed: 2000, pause: 6000,
-		// 			pager: false,
-		// 			onSliderLoad: function() {
-		// 				$(".slider-wrapper").css("visibility", "visible");
-		// 			}});
+		$('.bxslider').bxSlider(
+				{auto: true,
+					controls:false ,
+					adaptativeHeight: true,
+					speed: 2000, pause: 6000,
+					pager: false,
+					onSliderLoad: function() {
+						$(".slider-wrapper").css("visibility", "visible");
+					}});
 
 			$('.carousel[data-type="multi"] .item').each(function(){
 		  var next = $(this).next();
