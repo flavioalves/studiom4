@@ -22,14 +22,23 @@
   .container
     .row
       .form-wrap
+        p Inscrições encerradas.
+      .lead-form
+        p Se você tiver interesse em participar do curso, deixe seus dados. <br/>Manteremos você informado sobre a próxima turma!
 
-        p Você pode pagar no boleto ou em até 10x no cartão!
-
-
-        <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-        <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post">
-          <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-          <input type="hidden" name="code" value="879FD47573737C0004E30FAB4305B23E" />
-          <input type="image" src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-        </form>
-        <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+        form.form-horizontal
+          .control-group
+            label.control-label for="inputName"  Nome
+            .controls
+              input#inputName placeholder="Nome" type="text"
+          .control-group
+            label.control-label for="inputEmail"  Email
+            .controls
+              input#inputEmail placeholder="Email" type="text"
+          .control-group
+            label.control-label for="inputPassword"  Telefone
+            .controls
+              input#inputPassword placeholder="Password" type="text"
+          .control-group
+            .controls
+              button.btn.btn-success type="submit"  Enviar
