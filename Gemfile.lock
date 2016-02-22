@@ -429,6 +429,7 @@ DEPENDENCIES
   oily_png
   omniauth-facebook
   pg
+  pry
   rack-livereload
   rails (~> 3.2.13)
   rails-boilerplate

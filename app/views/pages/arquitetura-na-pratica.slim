@@ -26,19 +26,20 @@
       .lead-form
         p Se você tiver interesse em participar do curso, deixe seus dados. <br/>Manteremos você informado sobre a próxima turma!
 
-        form.form-horizontal
+        form#lead-form.form-horizontal
           .control-group
             label.control-label for="inputName"  Nome
             .controls
-              input#inputName placeholder="Nome" type="text"
+              <input id="inputName" name="name" type="text" required>
           .control-group
             label.control-label for="inputEmail"  Email
             .controls
-              input#inputEmail placeholder="Email" type="text"
+              <input id="inputEmail" name="email" type="text" required>
+
           .control-group
-            label.control-label for="inputPassword"  Telefone
+            label.control-label for="inputPhone"  Telefone
             .controls
-              input#inputPassword placeholder="Password" type="text"
+              input#inputPhone name="phone" type="text"
           .control-group
             .controls
-              button.btn.btn-success type="submit"  Enviar
+              button.btn.btn-success#lead-form-submit type="submit"  Enviar
