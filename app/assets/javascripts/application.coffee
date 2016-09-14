@@ -3,6 +3,7 @@
 #= require jquery.validate
 
 #= require bootstrap/bootstrap
+#= require bootstrap-sprockets
 #= require facebook_popup
 #= require validator
 #= require user

@@ -1,76 +1,53 @@
 .landing-arquitetura-na-pratica
-  margin-top: 30px
-  margin-bottom: 30px
-  background: white
+  body
 
-  .logo
-    text-align: center
-    img
-      width: 200px
-      margin: 50px auto
+  background: white
+  font-family: 'Open Sans'
+
+  h3
+    color: #3E0D5B
+
+  .container 
+    padding-top: 30px
+    .row
+      padding-top: 20px
 
   .hero
+    background-color: #3E0D5B
     text-align: center
     img
-      margin: 0 auto 40px
+      margin-top: 30px
       width: 100%
-      @media (min-width: 980px)
-        width: 700px
 
+  .footer-image
+    img
+      margin: 0 auto
+      width: 100%
 
-  p
-    text-align: center
-    color: #34255b
-    font-size: 30px
-    font-weight: bold
+  .content
+    font-size: 16px
+    font-family: 'Roboto', sans-serif
+    text-align: justify
+    line-height: 26px
 
-  .about
-    .span4
-      float: left
-      width: 49%
-      @media (min-width: 768px) and (max-width: 979px)
-        //width: 335px
-        width: 45%
-      @media (min-width: 980px)
-        //width: 40%
-        width: 370px
+  ul 
+    padding: 0 0 0 15px
+    li
+      list-style-type: disc
+      padding-top: 10px
+      &:last-child
+        margin-bottom: 50px
 
+  .btn
+    margin-top: 50px
 
-    .offset3
-      margin-top: 17px
-      margin-left: 10px
-      @media (min-width: 768px) and (max-width: 979px)
-        margin-left: 4%
-      @media (min-width: 980px)
-        margin-left: 15%
-      @media (min-width: 1200px)
-        margin-left: 21%
+  .col-centered
+    float: none
+    margin: 0 auto
 
-    b
-      color: #34255b
-
-  .form-wrap
-    text-align: center
-    margin-top: 40px
-    padding-bottom: 15px
-
-  .lead-form
-    .form-horizontal
-      margin-right: auto
-      margin-left: auto
-      width: 400px
-
-      .control-label
-        width: 100px
-
-      .controls
-        margin-left: 120px
-
-    p
-      font-size: 16px
-      font-weight: 300
-
-    input
-      height: 35px
-      width: 250px
-
+  .text-right
+    @media (max-width: 768px)
+      text-align: center
+    @media (min-width: 980px)
+      h3
+        margin-top: 0px
