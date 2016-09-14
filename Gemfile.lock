@@ -50,7 +50,7 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.1)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.3.1.0)
+    bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
     bourbon (3.1.6)
       sass (>= 3.2.0)
@@ -396,7 +396,7 @@ DEPENDENCIES
   activeadmin
   better_errors
   binding_of_caller
-  bootstrap-sass
+  bootstrap-sass (= 3.1.1.0)
   breakpoint
   bullet
   byebug
@@ -454,9 +454,3 @@ DEPENDENCIES
   toolkit
   uglifier
   unicorn
-
-RUBY VERSION
-   ruby 2.0.0p195
-
-BUNDLED WITH
-   1.13.1
