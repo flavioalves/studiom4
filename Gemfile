@@ -33,7 +33,6 @@ gem 'sentry-raven'
 
 group :assets do
   gem 'sass-rails'
-  gem 'bootstrap-sass', '= 3.1.1.0'
   gem 'coffee-rails'
   gem 'uglifier'
   gem 'font_assets'
