@@ -1,5 +1,16 @@
+.body-landing-arquitetura
+  @media (max-width: 767px)
+    padding-left: 0px
+    padding-right: 0px
+
 .landing-arquitetura-na-pratica
-  body
+  @media (max-width: 767px)
+    section
+      padding-left: 40px
+      padding-right: 40px
+    .logos.offset4
+      margin-left: 0px
+      text-align: center
 
   b
     font-weight: 800
@@ -18,9 +29,14 @@
     background-color: #F4F4F4
     border-top: solid 30px #3E0D5B
     text-align: center
+    overflow: hidden
     img
-      width: 100%
-      max-width: 960px
+      position: relative
+      left: 100%
+      margin-left: -200%
+    @media (max-width: 991px)
+      img
+        max-width: 200%
 
   section
     margin-bottom: 60px
@@ -72,13 +88,17 @@
   .footer-image
     .container
       padding-top: 0px
-    img
-      margin: 0 auto
-      width: 100%
     .logos
       img
         padding-bottom: 20px
         width: 300px
+    .malha
+      text-align: center
+      overflow: hidden
+      img
+        position: relative
+        left: 100%
+        margin-left: -200%
 
   .content
     font-size: 17px
