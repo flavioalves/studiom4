@@ -26,6 +26,13 @@ module ApplicationHelper
     end
   end
 
+  # Rails
+  def svg(name)
+    file_path = "#{Rails.root}/app/assets/images/arquitetura_na_pratica/#{name}.svg"
+    return File.read(file_path).html_safe if File.exists?(file_path)
+    '(not found)'
+  end
+
   # editable_region :content_block_name, 'teste'
   #   gets and creates the content block :content_block_name with 'teste'
   #
