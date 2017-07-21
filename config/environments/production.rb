@@ -61,8 +61,13 @@ Studiom4::Application.configure do
      active_admin.js 
      active_admin.css
      active_admin/print.css
+     .svg
    )
 
+
+  # Must include to get inline SVGs to work in deploy
+  config.assets.css_compressor = :sass
+  
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
