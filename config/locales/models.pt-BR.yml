@@ -8,6 +8,7 @@ pt-BR:
       contact: Contato(s)
       project: Projeto(s)
       gallery_photo: Fotos da Galeria
+      studant: 'Estudantes'
     attributes:
       contact:
         name: Nome
