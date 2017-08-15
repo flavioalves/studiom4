@@ -31,6 +31,8 @@ Studiom4::Application.routes.draw do
 
   post  '/leads/new'          => 'leads#new', as: :new_lead
 
+  match '/arquitetura-na-pratica/duvidas-frequentes/' => 'pages#faq'
+
   ActiveAdmin.routes(self)
   get ':slug'                => 'pages#show',     as: :page
 end
