@@ -21,4 +21,7 @@ class PagesController < ApplicationController
       render 'show'
     end
   end
+
+  def faq
+  end
 end
