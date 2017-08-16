@@ -28,16 +28,3 @@
 #= require main
 #= require jquery.bxslider
 #= require leads-form
-
-
-
-
-
-
-
-
-
-
-
-
-

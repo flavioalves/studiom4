@@ -31,6 +31,8 @@ Studiom4::Application.routes.draw do
 
   post  '/leads/new'          => 'leads#new', as: :new_lead
 
+  resources :studants
+
   match '/arquitetura-na-pratica/duvidas-frequentes/' => 'pages#faq'
 
   ActiveAdmin.routes(self)
