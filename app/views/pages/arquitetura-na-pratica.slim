@@ -58,28 +58,29 @@
         .span4
           h3
             ' ARQUITETURA NA PRÁTICA
-          button.btn.btn-ap type="butotn" data-toggle="modal" data-target="#myModal"
+          button.btn.btn-ap type="butotn" data-toggle="modal" data-target="#myModalArquiteturaNaPratica"
             ' Inscreva-se
         .span4
           h3.center
             ' PACOTE ARQUITETURA NA PRÁTICA + CURSO PRÁTICO DE ILUMINAÇÃO DE INTERIORES
-          button.btn type="butotn" data-toggle="modal" data-target="#myModal"
+          button.btn type="butotn" data-toggle="modal" data-target="#myModalPacote"
             ' Inscreva-se com 10% de desconto
         .span4
           h3.center
             ' EX-ALUNOS DO CURSO PRÁTICO DE ILUMINAÇÃO DE INTERIORES
-          button.btn type="butotn" data-toggle="modal" data-target="#myModal"
+          button.btn type="butotn" data-toggle="modal" data-target="#myModalExAluno"
             ' Inscreva-se no Arquitetura na Prática com 10% de desconto
-    .modal.fade id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;"
+    .modal.fade id="myModalArquiteturaNaPratica" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;"
       .modal-dialog role="document"
         .modal-content
           .modal-header
             button type="button" class="close" data-dismiss="modal" aria-label="Closespan"
             .modal-title
               ' Inscreva-se - Arquitetura na Prática
-          = form_for Studant.new, as: :studant do |f|
+          = form_for Studant.new, as: :studant, remote: true do |f|
             .modal-body
               div.field.span3
+                = f.hidden_field :studant_type, value: 'arquitetura-na-pratica'
                 = f.label :name, 'Nome completo'
                 = f.text_field :name, required: 'true'
               div.field.span3
@@ -95,7 +96,76 @@
               button.btn.btn-default type="button" data-dismiss="modal"
                 ' Fechar
               = f.submit 'Inscreve-se', class: 'btn btn-primary'
-
+    .modal.fade id="myModalPacote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;"
+      .modal-dialog role="document"
+        .modal-content
+          .modal-header
+            button type="button" class="close" data-dismiss="modal" aria-label="Closespan"
+            .modal-title
+              ' Inscreva-se - Arquitetura na Prática + Curso Prático de Iluminação de Interiores
+          = form_for Studant.new, as: :studant, remote: true do |f|
+            .modal-body
+              div.field.span3
+                = f.hidden_field :studant_type, value: 'pacote'
+                = f.label :name, 'Nome completo'
+                = f.text_field :name, required: 'true'
+              div.field.span3
+                = f.label :email, 'E-mail'
+                = f.email_field :email, required: 'true'
+              div.field
+                = f.label :facebook, 'Link do seu perfil do Facebook'
+                = f.text_field :facebook, required: 'true'
+              div.field
+                = f.label :cpf, 'CPF'
+                = f.text_field :cpf, required: 'true', class: 'cpf-mask'
+            .modal-footer
+              button.btn.btn-default type="button" data-dismiss="modal"
+                ' Fechar
+              = f.submit 'Inscreve-se', class: 'btn btn-primary'
+    .modal.fade id="myModalExAluno" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;"
+      .modal-dialog role="document"
+        .modal-content
+          .modal-header
+            button type="button" class="close" data-dismiss="modal" aria-label="Closespan"
+            .modal-title
+              ' Inscreva-se - Arquitetura na Prática com desconto para ex-alunos do curso de Iluminação
+          = form_for Studant.new, as: :studant, remote: true do |f|
+            .modal-body
+              div.field.span3
+                = f.hidden_field :studant_type, value: 'ex-aluno-iluminacao'
+                = f.hidden_field :ex_studant, value: 'true'
+                = f.hidden_field :status, value: 'Verificar'
+                = f.label :name, 'Nome completo'
+                = f.text_field :name, required: 'true'
+              div.field.span3
+                = f.label :email, 'E-mail'
+                = f.email_field :email, required: 'true'
+              div.field
+                = f.label :facebook, 'Link do seu perfil do Facebook'
+                = f.text_field :facebook, required: 'true'
+              div.field
+                = f.label :cpf, 'CPF'
+                = f.text_field :cpf, required: 'true', class: 'cpf-mask'
+            .modal-footer
+              button.btn.btn-default type="button" data-dismiss="modal" id="close-modal"
+                ' Fechar
+              = f.submit 'Inscreve-se', class: 'btn btn-primary'
+  <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+  <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" style="display:none;">
+  <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+  <input type="hidden" name="code" value="4D0125ABE0E0C47224BFAF9EBF1D5548" />
+  <input type="hidden" name="iot" value="button" />
+  <input id="pagseguro-arquitetura-na-pratica" type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-roxo-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+  </form>
+  <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+  <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
+  <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" style="display:none;">
+  <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
+  <input type="hidden" name="code" value="1E668304F5F5461CC4CF9FA486126475" />
+  <input type="hidden" name="iot" value="button" />
+  <input id="pagseguro-pacote" type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+  </form>
+  <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
   .footer-image
     .container
       .row
