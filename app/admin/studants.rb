@@ -3,7 +3,7 @@ ActiveAdmin.register Studant do
 
   filter :name
   filter :email
-  filter :type
+  filter :studant_type
   filter :ex_studant
   filter :status
   filter :created_at
@@ -14,7 +14,7 @@ ActiveAdmin.register Studant do
     column :name
     column :email
     column :facebook
-    column :type
+    column :studant_type
     column :ex_studant
     column :status
     column :created_at
