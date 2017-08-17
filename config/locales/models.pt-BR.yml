@@ -54,5 +54,11 @@ pt-BR:
         cover_image: Foto de Capa
       gallery_photo:
         image: Imagem
-
-
+      studant:
+        name: Nome
+        email: E-mail
+        studant_type: Tipo de Estudante
+        ex_studant: Ex-Aluno - Iluminação
+        created_at: Criado em
+        updated_at: Atualizado em
+        cpf: CPF
