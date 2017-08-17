@@ -81,20 +81,20 @@
             .modal-body
               div.field.span3
                 = f.label :name, 'Nome completo'
-                = f.text_field :name, as: :string, :required => 'true'
+                = f.text_field :name, required: 'true'
               div.field.span3
                 = f.label :email, 'E-mail'
-                = f.text_field :email, as: :email, :required => 'true'
+                = f.email_field :email, required: 'true'
               div.field
-                = f.label :facebook, 'Facebook'
-                = f.text_field :facebook, as: :string, :required => 'true'
+                = f.label :facebook, 'Link do seu perfil do Facebook'
+                = f.text_field :facebook, required: 'true'
               div.field
                 = f.label :cpf, 'CPF'
-                = f.text_field :cpf, as: :number, :required => 'true'
+                = f.text_field :cpf, required: 'true', class: 'cpf-mask'
             .modal-footer
               button.btn.btn-default type="button" data-dismiss="modal"
                 ' Fechar
-              = f.submit "Inscreve-se", :class => "btn btn-primary"
+              = f.submit 'Inscreve-se', class: 'btn btn-primary'
 
   .footer-image
     .container
