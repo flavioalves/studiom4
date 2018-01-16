@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (3.2.13)
       actionpack (= 3.2.13)
@@ -451,9 +451,3 @@ DEPENDENCIES
   toolkit
   uglifier
   unicorn
-
-RUBY VERSION
-   ruby 2.0.0p648
-
-BUNDLED WITH
-   1.15.3

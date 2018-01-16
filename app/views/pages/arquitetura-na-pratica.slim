@@ -1,7 +1,7 @@
 - content_for :body_class, "body-landing-arquitetura"
 .landing-arquitetura-na-pratica
   .hero
-    = image_tag("arquitetura_na_pratica/hero.png")
+    = image_tag("arquitetura_na_pratica/banner-ap.jpg")
 
   .container
     section.row.what
@@ -19,155 +19,49 @@
           <b>Como funciona?</b>
       .span5.content
         p
-          | São <b>55 aulas</b> gravadas que você acessa no nosso portal, com seu
-          |  email e senha.
+          | São <b>45 aulas</b> gravadas que você acessa no nosso portal, com seu
+          |  login e senha.
         p
           | Toda semana nos encontramos ao vivo no Youtube para tirar todas as
           |  suas dúvidas em aulas que duram até 1h30.
-        p
-          | Todos nós da turma nos encontraremos em um grupo secreto no
-          |  facebook para trocar informação, dúvidas e conteúdos.
+
     section.row.when
       .span4.text-right
         h3
           <b>Quando começa?</b>
       .span5.content
-        | O curso começa no dia <b>04/09</b> e tem duração de <b>2 meses</b>. As
-        |  inscrições vão até o dia anterior, 01/09.
+        | O curso começa no dia <b>05/03</b> e tem duração de <b>2 meses</b>. As
+        |  inscrições vão até o dia anterior, 02/03.
+
     section.row.additional
-      .span6.offset4
+      .span4.text-right
         h3
-          <b>Além disso, você vai receber </b>
-          br
-          <b>SEIS BÔNUS:</b>
+          <b>Aulas bônus:</b>
+      .span5.content
+        ul.content
+          li Bônus <a href="http://www.paolacury.com.br/">Paola Cury</a>: tudo que vc precisa saber para agilizar seu executivo a partir do SketchuUp para o AutoCad.
+          li Bônus <a href="https://www.instagram.com/alicedeholanda/">Alice de Holanda</a>: aulas com a Coach Criativa Alice de Holanda pra você melhorar sua comunicação com equipe e clientes.
+
+    section.row.additional
+      .span4.text-right
+        h3
+          <b>Além disso, vc vai receber os BÔNUS</b>
+      .span5.content
         ul.content
           li Modelo do StudioM4 que usamos em nossos contratos
           li Modelo do StudioM4 que usamos em nossas propostas
           li Padrão AutoCAD do StudioM4
           li Check-list dos nossos projetos executivos
-          li Check-list de andamento de obra
-          li Aulas extas <a href="http://www.paolacury.com.br/">Paola Cury</a>
+          li Todos os arquivos CAD que usamos na aula
+
     section.row
       .span4.text-right
         h3
           <b>Ajuda?</b>
       .span5.content
-        a href="arquitetura-na-pratica/duvidas-frequentes/" Dúvidas Frequentes
+        a href="arquitetura-na-pratica/duvidas-frequentes/" <b>Dúvidas Frequentes</b>
 
-  section.combo.launch
-    .container
-      section.row.promotional
-        .span4
-          h3
-            ' ARQUITETURA NA PRÁTICA
-          button.btn.btn-ap type="butotn" data-toggle="modal" data-target="#myModalArquiteturaNaPratica"
-            ' Inscreva-se
-        .span4
-          h3.center
-            ' PACOTE ARQUITETURA NA PRÁTICA + CURSO PRÁTICO DE ILUMINAÇÃO DE INTERIORES
-          button.btn type="butotn" data-toggle="modal" data-target="#myModalPacote"
-            ' Inscreva-se com 10% de desconto
-        .span4
-          h3.center
-            ' EX-ALUNOS DO CURSO PRÁTICO DE ILUMINAÇÃO DE INTERIORES
-          button.btn type="butotn" data-toggle="modal" data-target="#myModalExAluno"
-            ' Inscreva-se no Arquitetura na Prática com 10% de desconto
-    .modal.fade id="myModalArquiteturaNaPratica" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;"
-      .modal-dialog role="document"
-        .modal-content
-          .modal-header
-            button type="button" class="close" data-dismiss="modal" aria-label="Closespan"
-            .modal-title
-              ' Inscreva-se - Arquitetura na Prática
-          = form_for Studant.new, as: :studant, remote: true do |f|
-            .modal-body
-              div.field.span3
-                = f.hidden_field :studant_type, value: 'arquitetura-na-pratica'
-                = f.label :name, 'Nome completo'
-                = f.text_field :name, required: 'true'
-              div.field.span3
-                = f.label :email, 'E-mail'
-                = f.email_field :email, required: 'true'
-              div.field
-                = f.label :facebook, 'Link do seu perfil do Facebook'
-                = f.text_field :facebook, required: 'true'
-              div.field
-                = f.label :cpf, 'CPF'
-                = f.text_field :cpf, required: 'true', class: 'cpf-mask'
-            .modal-footer
-              button.btn.btn-default type="button" data-dismiss="modal"
-                ' Fechar
-              = f.submit 'Inscreva-se', class: 'btn btn-primary'
-    .modal.fade id="myModalPacote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;"
-      .modal-dialog role="document"
-        .modal-content
-          .modal-header
-            button type="button" class="close" data-dismiss="modal" aria-label="Closespan"
-            .modal-title
-              ' Inscreva-se - Arquitetura na Prática + Curso Prático de Iluminação de Interiores (R$ 1.250,00)
-          = form_for Studant.new, as: :studant, remote: true do |f|
-            .modal-body
-              div.field.span3
-                = f.hidden_field :studant_type, value: 'pacote'
-                = f.label :name, 'Nome completo'
-                = f.text_field :name, required: 'true'
-              div.field.span3
-                = f.label :email, 'E-mail'
-                = f.email_field :email, required: 'true'
-              div.field
-                = f.label :facebook, 'Link do seu perfil do Facebook'
-                = f.text_field :facebook, required: 'true'
-              div.field
-                = f.label :cpf, 'CPF'
-                = f.text_field :cpf, required: 'true', class: 'cpf-mask'
-            .modal-footer
-              button.btn.btn-default type="button" data-dismiss="modal"
-                ' Fechar
-              = f.submit 'Inscreva-se', class: 'btn btn-primary'
-    .modal.fade id="myModalExAluno" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display:none;"
-      .modal-dialog role="document"
-        .modal-content
-          .modal-header
-            button type="button" class="close" data-dismiss="modal" aria-label="Closespan"
-            .modal-title
-              ' Inscreva-se - Arquitetura na Prática com desconto para ex-alunos do curso de Iluminação
-          = form_for Studant.new, as: :studant, remote: true do |f|
-            .modal-body
-              div.field.span3
-                = f.hidden_field :studant_type, value: 'ex-aluno-iluminacao'
-                = f.hidden_field :ex_studant, value: 'true'
-                = f.hidden_field :status, value: 'Verificar'
-                = f.label :name, 'Nome completo'
-                = f.text_field :name, required: 'true'
-              div.field.span3
-                = f.label :email, 'E-mail'
-                = f.email_field :email, required: 'true'
-              div.field
-                = f.label :facebook, 'Link do seu perfil do Facebook'
-                = f.text_field :facebook, required: 'true'
-              div.field
-                = f.label :cpf, 'CPF'
-                = f.text_field :cpf, required: 'true', class: 'cpf-mask'
-            .modal-footer
-              button.btn.btn-default type="button" data-dismiss="modal" id="close-modal"
-                ' Fechar
-              = f.submit 'Inscreva-se', class: 'btn btn-primary'
-  <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-  <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" style="display:none;">
-  <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-  <input type="hidden" name="code" value="4D0125ABE0E0C47224BFAF9EBF1D5548" />
-  <input type="hidden" name="iot" value="button" />
-  <input id="pagseguro-arquitetura-na-pratica" type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-roxo-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-  </form>
-  <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-  <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-  <form action="https://pagseguro.uol.com.br/checkout/v2/payment.html" method="post" style="display:none;">
-  <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
-  <input type="hidden" name="code" value="1E668304F5F5461CC4CF9FA486126475" />
-  <input type="hidden" name="iot" value="button" />
-  <input id="pagseguro-pacote" type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/pagamentos/209x48-comprar-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
-  </form>
-  <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
+
   .footer-image
     .container
       .row
