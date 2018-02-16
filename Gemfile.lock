@@ -451,3 +451,9 @@ DEPENDENCIES
   toolkit
   uglifier
   unicorn
+
+RUBY VERSION
+   ruby 2.1.2p95
+
+BUNDLED WITH
+   1.16.1
