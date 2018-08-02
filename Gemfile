@@ -26,6 +26,7 @@ gem 'jquery-migrate-rails'
 gem 'mercury-rails'
 gem 'font-awesome-rails'
 gem 'chosen-rails'
+gem 'sprockets', '~> 2.2.3'
 
 # external services
 gem 'newrelic_rpm'
