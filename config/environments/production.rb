@@ -18,8 +18,8 @@ Studiom4::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  # config.assets.compile = false
-  config.assets.compile = true
+  # Disabling precompiled action to avoid vulnerability
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -58,7 +58,7 @@ Studiom4::Application.configure do
      nwmatcher-1.2.5.js
      html5shiv-printshiv.js
      selectivizr.js
-     active_admin.js 
+     active_admin.js
      active_admin.css
      active_admin/print.css
    )
